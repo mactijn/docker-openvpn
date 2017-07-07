@@ -1,0 +1,19 @@
+version: '2.1'
+# init: docker-compose run --rm openvpn init
+# clean ca: docker-compose run --rm openvpn clean
+# create client: docker-compose run --rm openvpn client <client_id>
+
+services:
+
+  openvpn:
+    container_name: openvpn
+    privileged: true
+    build:
+      context: .
+    env_file:
+      - ./ca-details
+    ports:
+      - "0.0.0.0:1194:1194/udp"
+    volumes:
+      - ./ca:/ca
+      - ./client-configs:/client-configs

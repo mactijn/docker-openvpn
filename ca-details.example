@@ -1,0 +1,8 @@
+KEY_COUNTRY=US
+KEY_PROVINCE=CA
+KEY_CITY="Las Vegas"
+KEY_ORG="SnakeOil ltd."
+KEY_EMAIL=admin@example.com
+KEY_OU=IT
+
+SERVER_NAME=server.host.name
