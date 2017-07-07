@@ -5,7 +5,11 @@ This image will run an OpenVPN instance in Docker
 ## Usage
 
 to start a new instance:
+
 ```
+$ cp ca-details.example ca-details
+$ vi ca-details
+...
 $ docker-compose run --rm openvpn init
 $ docker-compose up -d
 ```
