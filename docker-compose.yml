@@ -6,7 +6,7 @@ version: '2.1'
 services:
 
   openvpn:
-    container_name: openvpn
+    restart: unless-stopped
     privileged: true
     build:
       context: .
